@@ -1,6 +1,6 @@
 #
 # Automatically generated make config: don't edit
-# Buildroot 2013.02-g66d666a-dirty Configuration
+# Buildroot 2013.02-geaa06f4-dirty Configuration
 #
 BR2_HAVE_DOT_CONFIG=y
 BR2_arm=y
@@ -49,33 +49,6 @@ BR2_arm1176jzf_s=y
 # BR2_iwmmxt is not set
 # BR2_arm1136jf_s is not set
 BR2_ARM_EABI=y
-# BR2_x86_generic is not set
-# BR2_x86_i386 is not set
-# BR2_x86_i486 is not set
-# BR2_x86_i586 is not set
-# BR2_x86_i686 is not set
-# BR2_x86_pentiumpro is not set
-# BR2_x86_pentium_mmx is not set
-# BR2_x86_pentium_m is not set
-# BR2_x86_pentium2 is not set
-# BR2_x86_pentium3 is not set
-# BR2_x86_pentium4 is not set
-# BR2_x86_prescott is not set
-# BR2_x86_nocona is not set
-# BR2_x86_core2 is not set
-# BR2_x86_atom is not set
-# BR2_x86_k6 is not set
-# BR2_x86_k6_2 is not set
-# BR2_x86_athlon is not set
-# BR2_x86_athlon_4 is not set
-# BR2_x86_opteron is not set
-# BR2_x86_opteron_sse3 is not set
-# BR2_x86_barcelona is not set
-# BR2_x86_geode is not set
-# BR2_x86_c3 is not set
-# BR2_x86_c32 is not set
-# BR2_x86_winchip_c6 is not set
-# BR2_x86_winchip2 is not set
 
 #
 # Build options
@@ -173,7 +146,7 @@ BR2_TARGET_LDFLAGS=""
 # System configuration
 #
 BR2_TARGET_GENERIC_HOSTNAME="raspi"
-BR2_TARGET_GENERIC_ISSUE="welcome to hell."
+BR2_TARGET_GENERIC_ISSUE="tonight, we dine in hell!"
 # BR2_TARGET_GENERIC_PASSWD_DES is not set
 BR2_TARGET_GENERIC_PASSWD_MD5=y
 # BR2_TARGET_GENERIC_PASSWD_SHA256 is not set
@@ -1000,7 +973,12 @@ BR2_RASPBERRYPI_GPU_RAM_SIZE=8
 # BR2_TARGET_ROOTFS_INITRAMFS is not set
 # BR2_TARGET_ROOTFS_JFFS2 is not set
 # BR2_TARGET_ROOTFS_ROMFS is not set
-# BR2_TARGET_ROOTFS_SQUASHFS is not set
+BR2_TARGET_ROOTFS_SQUASHFS=y
+BR2_TARGET_ROOTFS_SQUASHFS4=y
+BR2_TARGET_ROOTFS_SQUASHFS4_GZIP=y
+# BR2_TARGET_ROOTFS_SQUASHFS4_LZMA is not set
+# BR2_TARGET_ROOTFS_SQUASHFS4_LZO is not set
+# BR2_TARGET_ROOTFS_SQUASHFS4_XZ is not set
 BR2_TARGET_ROOTFS_TAR=y
 # BR2_TARGET_ROOTFS_TAR_NONE is not set
 BR2_TARGET_ROOTFS_TAR_GZIP=y

@@ -4,7 +4,7 @@ TARGETDIR=$1
 sed -i 's%^root::%root:8kfIfYHmcyQEE:%' $TARGETDIR/etc/shadow
 
 # Point /bin/sh to /bin/bash
-ln -T -s /bin/ash $TARGETDIR/bin/sh 
+#ln -T -s /bin/ash $TARGETDIR/bin/sh 
 
 # Package the /boot partition
 tar -czf $TARGETDIR/../images/boot.tar.gz --exclude=Image -C $TARGETDIR/boot/ .
