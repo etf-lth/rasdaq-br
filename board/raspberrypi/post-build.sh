@@ -1,7 +1,7 @@
 TARGETDIR=$1
-# Set root password to 'root'. Password generated with
+# Set root password to 'lasershark'. Password generated with
 # mkpasswd, from the 'whois' package in Debian/Ubuntu.
-sed -i 's%^root::%root:8kfIfYHmcyQEE:%' $TARGETDIR/etc/shadow
+sed -i 's%^root::%root:qRsgFPySqqVX6:%' $TARGETDIR/etc/shadow
 
 # Point /bin/sh to /bin/bash
 #ln -T -s /bin/ash $TARGETDIR/bin/sh 
