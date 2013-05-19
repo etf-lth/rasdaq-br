@@ -1,21 +1,23 @@
 #!/bin/sh
 #
-# Manage radaq leds
+# Manage radaq driver
 #
 # 130420 kongo <kongo@etf.nu>
 
 case "$1" in
   start)
-        echo -n "Setting leds: "
-        i2cset -y 0 3 1 2
+        echo -n "Starting radaq: "
+        modprobe radaq
         echo "OK"
         ;;
   stop)
-        echo -n "Setting leds: "
-        i2cset -y 0 3 1 0
+        echo -n "Stopping radaq: "
+        rmmod radaq
         echo "OK"
         ;;
   restart|reload)
+        modprobe radaq
+        rmmod radaq
         ;;
   *)
         echo "Usage: $0 {start|stop|restart}"
