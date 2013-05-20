@@ -12,6 +12,8 @@ tar -czf $TARGETDIR/../images/boot.tar.gz --exclude=Image -C $TARGETDIR/boot/ .
 # udhcpd
 cp board/raspberrypi/udhcpd.conf $TARGETDIR/etc/
 
+cp board/raspberrypi/S50udhcpd $TARGETDIR/etc/init.d/
+
 # remove inittab
 #rm $TARGETDIR/etc/inittab
 

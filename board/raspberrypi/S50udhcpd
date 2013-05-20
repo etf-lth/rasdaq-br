@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DAEMON=/sbin/udhcpd
+DAEMON=/usr/sbin/udhcpd
 NAME=udhcpd
 PIDFILE=/var/run/udhcpd
 
