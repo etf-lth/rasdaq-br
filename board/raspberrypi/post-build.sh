@@ -10,7 +10,8 @@ sed -i 's%^root::%root:qRsgFPySqqVX6:%' $TARGETDIR/etc/shadow
 tar -czf $TARGETDIR/../images/boot.tar.gz --exclude=Image -C $TARGETDIR/boot/ .
 
 # udhcpd
-cp board/raspberrypi/udhcpd.conf $TARGETDIR/etc/
+mkdir $TARGETDIR/etc/udhcpd/
+cp board/raspberrypi/udhcpd.conf $TARGETDIR/etc/udhcpd/udhcpd.eth0.conf
 
 cp board/raspberrypi/S50udhcpd $TARGETDIR/etc/init.d/
 
