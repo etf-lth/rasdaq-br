@@ -28,7 +28,7 @@ cp board/raspberrypi/udhcpd.conf $TARGETDIR/etc/
 #cp board/raspberrypi/tty1.conf $TARGETDIR/etc/init/
 
 # add eth0 dhcp entry into /etc/network/interfaces
-#cp board/raspberrypi/interfaces $TARGETDIR/etc/network/
+cp board/raspberrypi/interfaces $TARGETDIR/etc/network/
 
 # make sure that ntpdate is run before sshd is started
 #cp board/raspberrypi/ntpdate.conf $TARGETDIR/etc/init/
