@@ -1,6 +1,6 @@
 #
 # Automatically generated make config: don't edit
-# Buildroot 2013.02-g8c6387c Configuration
+# Buildroot 2013.02-ga71aea6 Configuration
 #
 BR2_HAVE_DOT_CONFIG=y
 BR2_arm=y
@@ -145,7 +145,7 @@ BR2_TARGET_LDFLAGS=""
 #
 # System configuration
 #
-BR2_TARGET_GENERIC_HOSTNAME="radaq"
+BR2_TARGET_GENERIC_HOSTNAME="rasdaq"
 BR2_TARGET_GENERIC_ISSUE="tonight, we dine in hell!"
 # BR2_TARGET_GENERIC_PASSWD_DES is not set
 BR2_TARGET_GENERIC_PASSWD_MD5=y
