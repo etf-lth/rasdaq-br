@@ -9,6 +9,9 @@ sed -i 's%^root::%root:qRsgFPySqqVX6:%' $TARGETDIR/etc/shadow
 # Package the /boot partition
 tar -czf $TARGETDIR/../images/boot.tar.gz --exclude=Image -C $TARGETDIR/boot/ .
 
+# udhcpd
+cp board/raspberrypi/udhcpd.conf $TARGETDIR/etc/
+
 # remove inittab
 #rm $TARGETDIR/etc/inittab
 
