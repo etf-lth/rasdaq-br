@@ -1,0 +1,25 @@
+#!/bin/sh
+#
+# Set system time from RTC
+#
+# 130428 kongo <kongo@etf.nu>
+
+case "$1" in
+  start)
+        echo -n "Adjusting system clock: "
+	hwclock -s -u
+        echo "OK"
+        ;;
+  stop)
+	echo -n "Saving system clock: "
+	hwclock -w
+	echo "OK"
+        ;;
+  restart|reload)
+        ;;
+  *)
+        echo "Usage: $0 {start|stop|restart}"
+        exit 1
+esac
+
+
